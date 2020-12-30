@@ -31,27 +31,6 @@
   </url>
   
   <url>
-    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/post/project-1/</loc>
-    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/tags/scene/</loc>
-    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/tags/</loc>
-    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -59,6 +38,36 @@
   
   <url>
     <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/tags/classification/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/tags/lending-club/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/tags/probability-of-default/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/post/project-1/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
