@@ -35,7 +35,7 @@
 <meta itemprop="name" content="Project I. Predicting probability of default on P2P loans - Part 1">
 <meta itemprop="description" content="Lending Club Data - Exploratory Data Analysis">
 
-<meta itemprop="wordCount" content="686">
+<meta itemprop="wordCount" content="734">
 
 
 
@@ -225,7 +225,31 @@ Lending Club has been around for nearly a decade now and was one of the earliest
 <li>Compare classification methods to pick a superior method</li>
 </ol>
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
-<p>As the aim is to understand factors that best determine the default of loan by analyzing loan level data. The study uses the entire data from 2007 to 2020Q3 available from Lending club website rather than taking a sample. The dataset has 2.9 million records and 151 variables. Models can be trained and tested using 70.83 % (57.45% Fully Paid + 13.38% Default) of the total loans that are already closed with a known outcome. The remaining 29.17 % (28.18 % Current and .99 % Past due) of the total loans are active and can be leveraged for the out of sample performance testing.</p>
+<p>As the aim is to understand factors that best determine the default of loan by analyzing loan level data, entire data from 2007 to 2020Q3 available from Lending club website rather than taking a sample. The dataset has 2.9 million records and 151 variables. Models can be trained and tested using 70.83 % (57.45% Fully Paid + 13.38% Default) of the total loans that are already closed with a known outcome. The remaining 29.17 % (28.58 % Current and .59 % Past due) of the total loans are active and can be leveraged for the out of sample performance testing.</p>
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC4%20loan_amount_by_issed_date.gif"/> <figcaption>
+            <h4>Loan amount by issued date</h4>
+        </figcaption>
+</figure>
+
+<p><figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC-4.6%20loan%20amount%20by%20grade.jpeg"/> <figcaption>
+            <h4>Loan amount by grade</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC-4.6.5%20Interest%20rate%20%20by%20grade.jpeg"/> <figcaption>
+            <h4>Interest rate by grade</h4>
+        </figcaption>
+</figure>
+</p>
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC4.7%20Loan%20amoubt%20by%20purpose.jpeg"/> <figcaption>
+            <h4>Loan Amount by purpose</h4>
+        </figcaption>
+</figure>
+
 <figure>
     <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC3-Loanbystatus.jpeg"/> 
 </figure>
@@ -239,9 +263,48 @@ Lending Club has been around for nearly a decade now and was one of the earliest
 <p>Note: Loan Status Modifications -</p>
 <ol>
 <li>&ldquo;Charged off&rdquo; and &ldquo;Default loans&rdquo; were clubbed together under &ldquo;Default&rdquo; based on the assumption that they would not be significantly different when looked on from a probability of default point of view.
-2.&ldquo;Late (31-120 days)&rdquo;,&ldquo;Late (16-30 days)&ldquo;and &ldquo;In Grace Period&rdquo; were clubbed as &ldquo;Past Due&rdquo;
+2.&ldquo;Late (31-120 days)&rdquo;,&ldquo;Late (16-30 days)&ldquo;and  were clubbed as &ldquo;Past Due&rdquo;
 3.&ldquo;Does not meet the credit policy. Status:Fully Paid&rdquo; loans were clubbed with &ldquo;Fully Paid&rdquo; and &ldquo;Does not meet the credit policy. Status:Charged Off&rdquo; loans were clubbed with &ldquo;Charged Off&rdquo; loans.</li>
 </ol>
+<h2 id="closed-loans">Closed loans</h2>
+<p>Closed loans by
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC5%20Closed%20loans%20by%20term.jpeg"/> <figcaption>
+            <h4>Closed loans by term</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC5.1%20Closed%20loans%20by%20Fico.jpeg"/> <figcaption>
+            <h4>Closed loans by Average FICO</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC5.2%20Closed%20loans%20by%20purpose.jpeg"/> <figcaption>
+            <h4>Closed loans by purpose</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC5.3%20Loans%20by%20emp%20lenght.jpeg"/> <figcaption>
+            <h4>Closed loans by employment length</h4>
+        </figcaption>
+</figure>
+</p>
+<h2 id="data-partition">Data partition</h2>
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC7-total36and60.JPG"/> <figcaption>
+            <h4>Distribution of Closed loans by status</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio/images/LC8-SplittingData.JPG"/> <figcaption>
+            <h4>Splitting Data into training and testing datasets</h4>
+        </figcaption>
+</figure>
+
 <ul class="pa0">
   
    <li class="list">
@@ -276,7 +339,7 @@ Lending Club has been around for nearly a decade now and was one of the earliest
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://abhijyotdas.github.io/Abhijyot-Das-Portfolio" >
-    &copy;  Abhijyot Das 2020 
+    &copy;  Abhijyot Das 2021 
   </a>
     <div>
 
